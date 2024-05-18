@@ -15,7 +15,7 @@ const obj={
     // string
     
 }
-console.log(obj.post);//you can't access full with this accessing method so that second method is also important
+console.log(obj.post);//you can't access full name with this accessing method so that second method is also important
 console.log(obj["full name"]);
 
 console.log(obj.mysym);
@@ -37,7 +37,7 @@ obj.greetingTwo = function(){
 
 console.log(obj.greeting());
 console.log(obj.greetingTwo());
-console.log(obj.greeting());
+ 
 
 
 
