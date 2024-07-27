@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom final</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="langauge">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    // normal method
+    function addLanguage(langName){
+        const li=document.createElement('li')
+        li.innerHTML=`${langName}`
+        document.querySelector('.langauge').appendChild(li);
+    }
+    addLanguage("pyttohn");
+    addLanguage("react");
+  // optimize approach
+    function addoptlangName(langName){
+     const li=document.createElement('li');
+     li.appendChild(document.createTextNode(langName))
+     document.querySelector('.langauge').appendChild(li)
+    }
+    addoptlangName("typescript")
+
+    // Edit the value
+   const secondlang= document.querySelector("li:nth-child(2)")
+   //secondlang.innerHTML="mojo"
+
+   const newli=document.createElement('li')
+   newli.textContent='mojo'
+   secondlang.replaceWith(newli)
+   const firstlang=document.querySelector("li:first-child")
+   firstlang.outerHTML='<li>TYPscript</li>'
+   //remove
+   const lastlang=document.querySelector('li:last-child')
+   lastlang.remove()
+
+</script>
+</html>
