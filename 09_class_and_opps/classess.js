@@ -20,7 +20,7 @@
 // console.log(ranjeet.encryptPassword());
 // console.log(ranjeet.changeuserName());
 
-// behind t]how it is working
+// behind the seen how it is working
  function User(username,email,password){
     this.username=username;
     this.email=email;
